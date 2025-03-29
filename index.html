@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currency Converter</title>
-    <link href="style.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -12,34 +11,87 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <div class="container">
-      <h2>Currency Converter</h2>
+<style>
+  * {
+  margin: 0;
+  padding: 0;
+}
+
+  .container{
+    padding:3rem;
+  }
+  h2{
+    margin-bottom: 4rem;
+    padding: 2px;
+  }
+  .amount {
+    margin-bottom: 1rem;
+  }
+  .amount input { padding-left: 0.5rem;}
+  .dropdown i {
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+.dropdown .from,
+.dropdown .to {
+  flex: 1;
+  padding: 8px;
+  text-align: center;
+}
+.msg {
+  margin: 2rem 0 2rem 0;
+  padding: 5px;
+}
+.dropdown label {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+  @media (max-width: 550px) {
+    body{
+      background-image: url(img/cc2.jpg);
+      background-size: cover;
+    }
+    .from{
+    padding-left:5px;
+    margin-left: -12px;
+  }
+  }
+</style>
+  <body class=" flex justify-center items-center min-h-screen bg-[url(img/cc.jpg)] bg-cover bg-no-repeat scroll-smooth">
+    <div class="container bg-[#00000074] p-20 rounded-xl border-1 border-[#00ffff] min-h-[45vh] w-80 md:w-122 shadow-[1px_1px_15px_#00ffff] transition-transform duration-400 hover:scale-[1.03] hover:[transform:rotateY(10deg)]">
+<h2 class="font-[Arial_Black,sans-serif] text-2xl text-[#00ffff] text-center">Currency Converter</h2>
       <form>
-        <div class="amount">
-      
-          <input class="box" value="none" type="number" placeholder="Enter Amount" >
+        <div class="amount text-md font-bold">
+       <input class="box bg-[#00ffff2c] w-full text-md text-[#ffffff] border-1 border-[#00ffff] rounded-md h-9 shadow-[0px_0px_8px_#00ffff] outline-none placeholder-[#ffffff] hover:bg-[#00ffff1c]" value="none" type="number" placeholder="Enter Amount" >
         </div>
-        <div class="dropdown">
-          <div class="from">
-            <p>From</p>
-            <div class="select-container">
-              <img src="https://flagsapi.com/US/flat/64.png" />
-              <select name="from"></select>
+        <div class="dropdown flex items-center">
+          <div class="from text-md font-[Arial_Black,sans-serif]">
+            <p class="text-[#00ffff]">From</p>
+            <div class="select-container text-[#000000] bg-[#00ffff2c] flex justify-center items-center rounded-md border-1 border-[#00ffff] transition-all duration-300 hover:bg-[#00ffff5d] hover:scale-[1.03] md:w-40 ">
+              <img
+              class="max-w-[3rem]"
+              src="https://flagsapi.com/US/flat/64.png" />
+              <select 
+              class="outline-none"
+              name="from"></select>
             </div>
           </div>
-          
-          <div class="to">
-            <p>To</p>
-            <div class="select-container">
-              <img src="https://flagsapi.com/IN/flat/64.png" />
-              <select name="to"></select>
+          <div class="to text-md font-[Arial_Black,sans-serif]">
+            <p class="text-[#00ffff]">To</p>
+            <div class="select-container text-[#000000] bg-[#00ffff2c] flex justify-center items-center rounded-md border-1 border-[#00ffff] transition-all duration-300 hover:bg-[#00ffff5d] hover:scale-[1.03]  md:w-40" >
+              <img
+              class="max-w-[3rem]"
+              src="https://flagsapi.com/IN/flat/64.png" />
+              <select 
+              class="outline-none"
+              name="to"></select>
             </div>
           </div>
         </div>
-        <div class="msg">1USD = 80INR</div>
-        <button>Get Exchange Rate</button>
+        <div class="msg border-1 border-[#00ffff] text-center text-[#ffffff] bg-[#00ffff2c] rounded-md text-xl font-[Arial_Black,sans-serif] transition-all duration-300 hover:scale-[1.03] hover:[transform:rotateY(10deg)]">1USD = 80INR</div>
+        <button class="bg-[#00ffff2c] h-[3rem] rounded-md text-[#ffffff] font-[oblique] text-xl cursor-pointe transition-all duration-300 border-1 border-[#00ffffff] w-full hover:bg-[#00ffff5d] hover:scale-[1.03] hover:[transform:rotateY(10deg)] ">Get Exchange Rate</button>
       </form>
       <script src="codes.js"></script>
     <script src="main.js"></script>
