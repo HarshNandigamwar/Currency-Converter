@@ -13,7 +13,7 @@ This Currency Converter web app is a modern, user-friendly tool designed to make
 
 *   **JavaScript:** Powers the core functionality of the currency conversion, including fetching exchange rates and performing calculations.
 *   **HTML:** Structures the content and elements of the web app.
-*   **Tailwind CSS:** Styles the app, creating the intuitive and visually appealing user interface.  
+*   **Tailwind_CSS:** Styles the app, creating the intuitive and visually appealing user interface.  
 
 ## 🚀 How to Use
 
