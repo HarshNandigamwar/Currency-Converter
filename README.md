@@ -13,7 +13,7 @@ This Currency Converter web app is a modern, user-friendly tool designed to make
 
 *   **JavaScript:** Powers the core functionality of the currency conversion, including fetching exchange rates and performing calculations.
 *   **HTML5:** Structures the content and elements of the web app.
-*   **Tailwind-CSS:** Styles the app, creating the intuitive and visually appealing user interface.  
+*   **Tailwind CSS:** Styles the app, creating the intuitive and visually appealing user interface.  
 
 ## 🚀 How to Use
 
@@ -21,5 +21,5 @@ This Currency Converter web app is a modern, user-friendly tool designed to make
 2.  Select the currency you want to convert from in the "From" dropdown.
 3.  Select the currency you want to convert to in the "To" dropdown.
 4.  Enter the amount you wish to convert in the input field.
-5.  The converted amount will be displayed instantly.
+5.  And click the "Get Exchange Rate" button & amount will be displayed instantly.
 
