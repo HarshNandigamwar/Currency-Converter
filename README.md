@@ -1,4 +1,4 @@
-# 💱 Currency Converter Web App
+## 💱 Currency Converter Web App
 This Currency Converter web app is a modern, user-friendly tool designed to make currency conversion quick and hassle-free. Built with JavaScript, the app features a responsive design that ensures seamless performance across all devices, including desktops, tablets, and smartphones.
 ---
 ![cc](./img/C%20C.png)
